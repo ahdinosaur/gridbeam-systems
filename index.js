@@ -164,39 +164,11 @@ const GRID_BEAM_SYSTEMS = [
     ]
   },
   {
-    id: 'grid-beam-xyz',
-    label: 'gridbeam.xyz prototype (WIP)',
+    id: 'gridkit.nz',
+    label: 'gridkit.nz',
     systemOfMeasurement: 'metric',
     defaultSizeId: '40mm',
     sizes: [
-      {
-        id: '10mm',
-        beamWidth: 10,
-        beamWidthLabel: '10 mm',
-        holes: [
-          {
-            id: 'plastic',
-            holeDiameter: 5,
-            holeDiameterLabel: '5 mm',
-            boltDiameter: 4,
-            boltDiameterLabel: '4 mm'
-          }
-        ]
-      },
-      {
-        id: '20mm',
-        beamWidth: 20,
-        beamWidthLabel: '20 mm',
-        holes: [
-          {
-            id: 'metal',
-            holeDiameter: 6,
-            holeDiameterLabel: '6 mm ?',
-            boltDiameter: 5,
-            boltDiameterLabel: '5 mm ?'
-          }
-        ]
-      },
       {
         id: '40mm',
         beamWidth: 40,
@@ -205,47 +177,12 @@ const GRID_BEAM_SYSTEMS = [
           {
             id: 'wood',
             holeDiameter: 8,
-            holeDiameterLabel: '8 mm ?',
+            holeDiameterLabel: '8 mm',
             boltDiameter: 6,
-            boltDiameterLabel: '6 mm ?'
-          },
-          {
-            id: 'metal',
-            holeDiameter: 9,
-            holeDiameterLabel: '9 mm ?',
-            boltDiameter: 8,
-            boltDiameterLabel: '8 mm ?'
+            boltDiameterLabel: '6 mm'
           }
         ]
       },
-      {
-        id: '60mm',
-        beamWidth: 60,
-        beamWidthLabel: '60 mm',
-        holes: [
-          {
-            id: 'metal',
-            holeDiameter: 13,
-            holeDiameterLabel: '13 mm ?',
-            boltDiameter: 12,
-            boltDiameterLabel: '12 mm ?'
-          }
-        ]
-      },
-      {
-        id: '100mm',
-        beamWidth: 10,
-        beamWidthLabel: '100 mm',
-        holes: [
-          {
-            id: 'metal',
-            holeDiameter: 21,
-            holeDiameterLabel: '21 mm ?',
-            boltDiameter: 20,
-            boltDiameterLabel: '20 mm ?'
-          }
-        ]
-      }
     ],
     defaultMaterialId: 'wood',
     materials: [
@@ -255,24 +192,6 @@ const GRID_BEAM_SYSTEMS = [
         sizeIds: ['40mm'],
         holeId: 'wood'
       },
-      {
-        id: 'aluminum',
-        label: 'aluminum',
-        sizeIds: ['20mm', '40mm', '60mm'],
-        holeId: 'metal'
-      },
-      {
-        id: 'steel',
-        label: 'steel',
-        sizeIds: ['20mm', '40mm', '100mm'],
-        holeId: 'metal'
-      },
-      {
-        id: 'plastic',
-        label: 'plastic',
-        sizeIds: ['10mm'],
-        holeId: 'plastic'
-      }
     ]
   }
 ]
